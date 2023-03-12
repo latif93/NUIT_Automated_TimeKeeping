@@ -189,6 +189,6 @@ born = dt.strptime(date, "%m %d %Y").weekday()
 #6. little prompt that tells the user to enter any special hours
 #Catch ERR_INTERNET_DISCONNECTED
 #Allow for inputted username/password
-#Make user-friendly (good comments, beautiful code, ui, webdriverwait, get rid of on-screen webdriver)
+#Make user-friendly (good comments, more readable code, ui, webdriverwait, get rid of on-screen webdriver, update chromedriver automatically)
 #Maybe make automation-less version
 #Submit to timekeeping 
