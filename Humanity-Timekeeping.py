@@ -114,8 +114,9 @@ def clean_data(data): #puts data in (hours) hours (minutes)m (month) (day) forma
      #   make_timedelta_list(match_start_and_end_times.group())
 
 def login(driver):
-    username = "dal7782"
-    password = 'Dolphin10!!!!'
+
+    username = input("Please enter your username for Humanity. ")
+    password = input("Please enter your password for Humanity. ")
     driver.get("https://nu1.humanity.com/app/timeclock/")
     driver.find_element("id", "email").send_keys(username)
     # find password input field and insert password as well
@@ -157,7 +158,7 @@ def read_data_from_txt(driver):
     return lst_of_lines
 
 def calculate_my_hours():
-    driver = webdriver.Chrome("chromedriver")
+    driver = webdriver.Chrome("chromedriver", 110)
     login(driver)
     data = record_timeclock_data(driver)
     write_timeclock_data_to_txt(data)
